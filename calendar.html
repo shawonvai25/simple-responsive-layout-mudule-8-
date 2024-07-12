@@ -8,11 +8,39 @@
     <style>
       .calendar {
         display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        row-gap: 10px;
+        column-gap: 5px;
+      }
+      .day,
+      .date {
+        background-color: aqua;
+        text-align: center;
+        border-radius: 5px;
+        width: 75px;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+      }
+      .day {
+        background-color: lightgrey;
       }
     </style>
   </head>
   <body>
     <div class="calendar">
+      <div class="day">S</div>
+      <div class="day">M</div>
+      <div class="day">T</div>
+      <div class="day">W</div>
+      <div class="day">Th</div>
+      <div class="day">Fr</div>
+      <div class="day">S</div>
+      <div class="date">29</div>
+      <div class="date">30</div>
+      <div class="date">31</div>
       <div class="date">1</div>
       <div class="date">2</div>
       <div class="date">3</div>
@@ -43,11 +71,8 @@
       <div class="date">28</div>
       <div class="date">29</div>
       <div class="date">30</div>
-      <div class="date">31</div>
-      <div class="date">32</div>
-      <div class="date">33</div>
-      <div class="date">34</div>
-      <div class="date">35</div>
+      <div class="date">1</div>
+      <div class="date">2</div>
     </div>
   </body>
 </html>
